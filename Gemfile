@@ -12,4 +12,6 @@ gem 'sinatra-contrib'
 # Testing & Debugging Configurations
 group :development, :test do
     gem 'pry'
+    gem "rspec"
+    gem "rack-test"
 end

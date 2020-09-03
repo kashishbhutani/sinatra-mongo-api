@@ -14,7 +14,7 @@ require 'mongoid'
 require 'pry'
 
 # database configurations
-Mongoid.load! "mongoid.config"
+Mongoid.load! "./config/mongoid.config"
 
 # serializers
 require './serializers/init'

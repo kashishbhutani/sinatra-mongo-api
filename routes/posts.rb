@@ -20,8 +20,8 @@ namespace '/api/v1' do
 
             posts.map { |post| PostSerializer.new(post) }.to_json
         rescue Exception => e
-            status 400
-            e.message.to_json
+            status 404
+            { message: e.message }.to_json
         end
     end
 
@@ -39,7 +39,7 @@ namespace '/api/v1' do
             PostSerializer.new(post).to_json
         rescue Exception => e
             status 404
-			e.message.to_json
+			{ message: e.message }.to_json
 		end
     end
 
