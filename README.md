@@ -14,6 +14,8 @@ API BASE URL -> http://localhost:4567
 
 Users API URL -> BASE_URL/api/v1/users
 
+Posts API URL -> BASE_URL/api/v1/users/:user_id/posts
+
 Testing Framework -> (Rspec)
 
 Follow the line on terminal for installing dependencies: bundle install
