@@ -16,5 +16,14 @@ require 'pry'
 # database configurations
 Mongoid.load! "mongoid.config"
 
+# serializers
+require './serializers/init'
+
+# helpers
+require './helpers/init'
+
 # models
 require './models/init'
+
+# routes
+require './routes/init'
